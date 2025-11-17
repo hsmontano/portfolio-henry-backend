@@ -22,3 +22,19 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+
+# Gradle and IDE files
+.gradle/
+.idea/
+build/
+HELP.md
+# Recommended ignores
+.DS_Store
+out/
+*.iml
+target/
+*.swp
+*.swo
+.vscode/
+node_modules/
+.env
