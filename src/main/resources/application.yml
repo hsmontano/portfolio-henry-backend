@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: portfolio-henry-backend
+  datasource:
+    url: jdbc:h2:mem:devdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+logging:
+  level:
+    # Configura el nivel de registro para el paquete específico
+    org.springframework.modulith: DEBUG
+    # Opcional: puede mantener el nivel raíz general en INFO o WARN
+    root: INFO
